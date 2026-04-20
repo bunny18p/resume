@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhanu Pratap - Resume</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fdf2f2;
+      --card: rgba(255,255,255,0.7);
+      --text: #1f2937;
+      --primary: #ef4444;
+      --primary-dark: #b91c1c;
+    }
+
+    body.dark {
+      --bg: #020617;
+      --card: rgba(30,41,59,0.6);
+      --text: #f1f5f9;
+      --primary: #f87171;
+      --primary-dark: #dc2626;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #ffe4e6, var(--bg));
+      color: var(--text);
+      transition: all 0.4s ease;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+      position: relative;
+    }
+
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .header-text {
+      text-align: right;
+      flex: 1;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+      background: linear-gradient(90deg, #ef4444, #f87171);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      opacity: 0.8;
+      margin-top: 10px;
+    }
+
+    .location {
+      font-size: 14px;
+      opacity: 0.7;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: var(--card);
+      border: none;
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background: var(--card);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      transform: translateY(40px);
+      opacity: 0;
+      transition: all 0.6s ease;
+    }
+
+    section.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    h2 {
+      font-weight: 600;
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+
+    ul li {
+      margin: 8px 0;
+      transition: 0.3s;
+    }
+
+    ul li:hover {
+      transform: translateX(10px);
+      color: var(--primary);
+    }
+
+    .cv-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #ef4444, #f87171);
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(239,68,68,0.4);
+      transition: 0.3s;
+    }
+
+    .cv-btn:hover {
+      transform: scale(1.08);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+    }
+  
+    </style>
+</head>
+<body>
+
+<header>
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+
+  
+
+  <div class="header-text">
+    <h1>BHANU PRATAP</h1>
+    <p class="location">📍 Bilaspur, Chhattisgarh, India</p>
+    <p>Aspiring Web Developer & Data Analysis Enthusiast</p>
+    <a href="cv.pdf" download class="cv-btn">Download CV</a>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>Motivated learner with skills in web development and data analysis. Passionate about creating clean, user-friendly websites and using creativity through drawing. Strong communication skills and eager to grow while contributing to impactful projects.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML / CSS</li>
+    <li>JavaScript</li>
+    <li>UI Design</li>
+    <li>Sketching & Drawing (Art)</li>
+    <li>Data Analysis</li>
+    <li>Communication Skills</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <p><strong>Frontend Developer - Company</strong></p>
+  <p>Worked on modern UI and responsive designs.</p>
+
+  <p><strong>Coaching Tutor (Teacher)</strong></p>
+  <p>Taught students in a coaching environment, helped explain concepts clearly, and improved their understanding and performance.</p>
+
+  <p><strong>Student (Self-Learner)</strong></p>
+  <p>Continuously learning web development and data analysis through practice, projects, and online resources.</p>
+
+  <p><strong>Professional Artist</strong></p>
+  <p>Created drawings and artworks, developing creativity, attention to detail, and visual design skills.</p>
+</section>
+
+<section>
+  <h2>Education</h2>
+
+  <p><strong>Dr. C.V. Raman University, Bilaspur</strong></p>
+  <p>PGDCA (Post Graduate Diploma in Computer Applications) — Present (Expected Sep 2025)</p>
+
+  <p><strong>Bachelor of Commerce (B.Com)</strong></p>
+  <p>Graduated — 2025</p>
+
+</section>
+
+<section>
+  <h2>Other Qualifications</h2>
+  <ul>
+    <li>Basic Knowledge of Computer Parts</li>
+    <li>Drawing / Sketching</li>
+    <li>Playing Guitar</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Personal Information</h2>
+  <ul>
+    <li>Date of Birth: 26 Feb 2003</li>
+    <li>Languages: Chhattisgarhi, Hindi, English</li>
+    <li>Location: Bilaspur, Chhattisgarh, India</li>
+    
+  </ul>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: bhanu882728@gmail.com</p>
+</section>
+
+<footer>
+  © 2026 Bhanu Pratap
+</footer>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+  sections.forEach(sec => observer.observe(sec));
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+</body>
+</html>
